@@ -53,8 +53,13 @@ void init (){
 int main(int argc, char** argv) {
 
     init();
+    
+    
+    if(SETTING_PUSH){
+        status = SETTING;
+        
+    }
     GIE = 1;
-    status = NORMA;
     TENZO_ON;
     
     while(TRUE){
